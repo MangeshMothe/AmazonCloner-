@@ -1,0 +1,46 @@
+# AmazonCloner-
+Amazon Cloner website uwing HTML, CSS and JavaScript 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Amazon Clone</h1>
+        <div class="cart">
+            <img src="images/cart.png" alt="Cart" width="30">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Product Listings -->
+    <div class="container">
+        <div class="product">
+            <img src="images/product1.jpg" alt="Product 1">
+            <h2>Wireless Headphones</h2>
+            <p>$49.99</p>
+            <button onclick="addToCart('Wireless Headphones', 49.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/product2.jpg" alt="Product 2">
+            <h2>Smartwatch</h2>
+            <p>$99.99</p>
+            <button onclick="addToCart('Smartwatch', 99.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/product3.jpg" alt="Product 3">
+            <h2>Gaming Mouse</h2>
+            <p>$29.99</p>
+            <button onclick="addToCart('Gaming Mouse', 29.99)">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
